@@ -208,19 +208,23 @@
 .btn.primary{background:linear-gradient(90deg,var(--accent),#5b21b6);box-shadow:0 6px 28px rgba(92,33,192,0.18);color:#fff}
 .hero-art{flex:0 0 360px;height:260px;display:flex;align-items:center;justify-content:center}
 .mock-window{background:linear-gradient(180deg,#0c1a2a,#071827);border:1px solid rgba(255,255,255,0.03);padding:20px;border-radius:12px;color:var(--muted);min-height:160px;display:flex;align-items:center;justify-content:center}
+/* heading gradient */
+.hero-copy h1 em.accent{background:linear-gradient(90deg,#7be4ff,#ff7ab6);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 .intro{padding:36px 0 8px;text-align:center}
 .intro h2{margin:6px 0 8px;font-size:var(--h2)}
 .lead{color:var(--muted);margin-bottom:18px}
 
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
-.stack-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-left:4px solid;padding:18px;border-radius:12px;color:var(--text);display:flex;flex-direction:column;justify-content:space-between;min-height:160px}
-.card-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.stack-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:18px;border-radius:14px;color:var(--text);display:flex;flex-direction:column;justify-content:space-between;min-height:150px;border:1px solid rgba(255,255,255,0.03)}
+.stack-card.highlight{box-shadow:0 12px 40px rgba(123,196,255,0.06);border:1px solid rgba(123,196,255,0.18)}
+.card-head{display:flex;align-items:center;gap:12px}
+.icon-box{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;color:var(--muted);flex:0 0 44px}
 .card-head h4{margin:0;font-size:1.05rem}
-.duration{font-size:0.9rem;color:var(--muted)}
-.level{color:var(--muted);margin:10px 0}
+.meta{color:var(--muted);font-size:0.85rem;margin-top:4px}
+.duration{font-size:0.9rem;color:var(--muted);flex:0 0 auto}
+.level{color:var(--muted);margin:10px 0;font-size:0.95rem}
 .milestones{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:0.95rem}
-.stack-card .meta{color:var(--muted);font-size:0.9rem}
 
 .site-footer{padding:28px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03);margin-top:40px}
 
@@ -277,7 +281,7 @@ html,body{height:100%;margin:0;background:radial-gradient(800px 300px at 75% 25%
 .timeline-wrap{position:relative;padding:40px 0}
 .timeline-wrap .line{position:absolute;left:50%;transform:translateX(-50%);top:0;bottom:0;width:2px;background:linear-gradient(#3b3b45,#141417)}
 .phase{position:relative;display:flex;align-items:center;margin:48px 0}
-.phase .bubble{position:absolute;left:50%;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;background:linear-gradient(90deg,var(--accent),#7be4ff);display:flex;align-items:center;justify-content:center;color:#0b0711;font-weight:700}
+.phase .bubble{position:absolute;left:50%;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;background:linear-gradient(90deg,var(--accent),#7be4ff);display:flex;align-items:center;justify-content:center;color:#0b0711;font-weight:700;box-shadow:0 6px 18px rgba(123,196,255,0.06)}
 .phase .card-box{max-width:420px;background:var(--card);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);color:inherit}
 .ph1{justify-content:flex-start}
 .ph1 .card-box{margin-left:auto;margin-right:60px}
